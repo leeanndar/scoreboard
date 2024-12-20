@@ -1,14 +1,43 @@
 <html>
     <head>
+        <meta charset="utf-8" />
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
+        <div id="game-time">
+            <div id="timer">
+                <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
             </div>
-            <div>
+            <button class="timer-btns" id="start-btn" onclick="timerStart()">START</button>
+            <button class="timer-btns" id="stop-btn"  onclick="timerStop()">STOP</button>
+            <button class="timer-btns" id="reset-btn" onclick="timerReset();">RESET</button>
+        </div>
+        <div class="container">
+            <div id="home">
+                <h3>HOME</h3>
+                <h2 class="score" id="score-home">0</h2>
+                <div id="score-home-btns">
+                    <button class="point-btns" id="one-point-home" onclick="addOnePointHome()">+1</button>
+                    <button class="point-btns" id="two-point-home" onclick="addTwoPointHome()">+2</button>
+                    <button class="point-btns" id="three-point-home" onclick="addThreePointHome()">+3</button>
+                </div>
+                <button class="point-btns" id="clear-home" onclick="clearHome()">CLEAR</button>
+            </div>
+            <div id="quarter-container">
+                <h1 id="quarter">QUARTER</h3>
+                <h2 id="quarter-count">1</h2>
+                <button class="quarter-btns" id="next-quarter" onclick="nextQuarter()">NEXT</button>
+                <button class="quarter-btns" id="back-quarter" onclick="clearQuarter()">CLEAR</button>
+            </div>
+            <div id="guest">
                 <h3>GUEST</h3>
+                <h2 class="score" id="score-guest">0</h2>
+                <div id="score-guest-btns">
+                    <button class="point-btns" id="one-point-guest" onclick="addOnePointGuest()">+1</button>
+                    <button class="point-btns" id="two-point-guest" onclick="addTwoPointGuest()">+2</button>
+                    <button class="point-btns" id="three-point-guest" onclick="addThreePointGuest()">+3</button>
+                </div>
+                <button class="point-btns" id="clear-guest" onclick="clearGuest()">CLEAR</button>
             </div>
         </div>
         <script src="index.js"></script>

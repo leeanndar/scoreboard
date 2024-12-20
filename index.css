@@ -1,8 +1,165 @@
+/*new game button
+highlight leader
+add more counters (e.g. period fouls, timer)
+change design*/
+
 body {
     margin: 0;
+    background: url(img/court.jpg);
+    background-size:contain;
+    color:white;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+}
+@font-face {
+    font-family: SCOREBOARD;
+    src: url(fonts/SCOREBOARD.ttf);
+}
+
+@font-face {
+    font-family: LEMONMILK-Bold;
+    src: url(fonts/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: technology;
+    src: url(fonts/technology.bold.ttf);
+}
+
+#game-time {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: double 1vw white;
+    background-color: black;
+    margin: 5vw 10vw 0vw 10vw;
+    padding: 2vw 2vw;
+}
+
+#timer {
+    font-family: technology;
+    font-size: 10vw;
+    color: #ff3636;
+    margin-top: 0.5vw;
+}
+
+.timer-btns {
+    height: fit-content;
+    padding: 2vw 2vw;
+    font-family: technology;
+    font-size: 3vw;
+    color: #ff3636;
+    background: white;
+    border: none;
+    border-radius: 2vw;
+    width: 10vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.timer-btns:hover {
+    background: rgb(195, 195, 195);
+    transition: 0.2s ease-in;
+}
+
+h3 {
+    font-family: lemonmilk-bold;
+    font-size: 6vw;
+    color: white;
+    text-shadow: 0 0 .5vw black;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, .5); 
+    box-shadow: 0 0 3vw 1vw black;
+    text-align: center;
+    margin: 5vw 5vw -5vw 5vw;
+}
+
+.score {
+    text-align: center;
+    font-family: technology;
+    font-size: 10vw;
+    color: #ff3636;
+    background-color: black;
+    padding: 5vw 2vw;
+    border-radius: 5vw;
+    margin: 10vw 0vw 5vw 0vw;
+}
+
+#score-home-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score-guest-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.point-btns {
+    color:#ff3636;
+    font-family: technology;
+    padding: 1vw 2vw;
+    margin: 0 1vw;
+    font-size: 5vw;
+    width: 10vw;
+    background: none;
+    border: none;
+    box-shadow: 0 0 1vw 0.25vw black;
+    border-radius: 2.5vw;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .5); 
+}
+
+.point-btns:hover {
+    background: rgb(195, 195, 195, .5); 
+    transition: 0.2s ease-in;
+}
+
+#clear-home, #clear-guest {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vw auto;
+    width: 10vw;
+    padding-top: 1.5vw;
+    font-size: 3vw;
+}
+
+#quarter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -5vw 0vw;
+    font-family: lemonmilk-bold;
+}
+
+#quarter {
+    font-size: 3vw;
+    margin: 0vw 0vw;
+    color: black;
+}
+
+#quarter-count {
+    color:black;
+    font-size: 5vw;
+}
+
+.quarter-btns {
+    color: white;
+    font-family: lemonmilk-bold;
+    font-size: 2vw;
+    background-color: #ff3636;
+    border: 0.5vw solid white;
+    width: 10vw;
+    margin: 1vw 0vw;
+    cursor: pointer;
+}
+
+.quarter-btns:hover {
+    transition: 0.2s ease-in;
+    background: #891d1d;
 }
