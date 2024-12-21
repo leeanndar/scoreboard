@@ -39,11 +39,12 @@ body {
     padding: 2vw 2vw;
 }
 
-#timer {
+#timer-el {
     font-family: technology;
     font-size: 10vw;
     color: #ff3636;
     margin-top: 0.5vw;
+    width: 30vw;
 }
 
 .timer-btns {
