@@ -158,6 +158,8 @@ h3 {
     width: 10vw;
     margin: 1vw 0vw;
     cursor: pointer;
+    text-align: center;
+    align-items: center;
 }
 
 .quarter-btns:hover {
